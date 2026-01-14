@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>간단한 웹 에디터</title>
+  </head>
+  <body>
+    <h2>심플 웹 에디터</h2>
+    <div id="editor-menu" style="padding-bottom: 5px; gap: 5px">
+      <button id="btn-bold"><b>굵게</b></button>
+      <button id="btn-italic"><i>기울임</i></button>
+      <button id="btn-underline"><u>밑줄</u></button>
+      <input type="color" id="colorPicker" />
+      <button id="btn-saved">저장</button>
+    </div>
+
+    <div
+      id="editor"
+      contenteditable="true"
+      style="
+        padding: 16px 24px;
+        border: 2px solid #000000;
+        border-radius: 5px;
+        height: 150px;
+      "
+    ></div>
+
+    <h3>저장된 HTML 결과</h3>
+    <div id="result" style="border: 1px dashed gray; padding: 10px"></div>
+
+    <script>
+      function setStyle(style) {
+        document.execCommand(style);
+      }
+
+      const btnBold = document.getElementById("btn-bold");
+      const btnItalic = document.getElementById("btn-italic");
+      const btnUnderline = document.getElementById("btn-underline");
+      const colorPicker = document.getElementById("colorPicker");
+      const btnSaved = document.getElementById("btn-saved");
+
+      const editor = document.getElementById("editor");
+      const result = document.getElementById("result");
+
+      btnBold.addEventListener("click", () => {
+        setStyle("bold");
+      });
+
+      btnItalic.addEventListener("click", () => {
+        setStyle("italic");
+      });
+
+      colorPicker.addEventListener("input", () => {
+        document.execCommand("foreColor", false, colorPicker.value);
+      });
+
+      btnUnderline.addEventListener("click", () => {
+        setStyle("underline");
+      });
+
+      btnSaved.addEventListener("click", () => {
+        result.innerText = editor.innerHTML;
+      });
+    </script>
+  </body>
+</html>
