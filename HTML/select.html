@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>좋아하는 과일</title>
+  </head>
+  <body>
+    <!-- <h2>좋아하는 과일 선택하기</h2>
+    <select name="fruitSelect" id="fruitSelect">
+      <option value="">-- 과일 선택 --</option>
+      <option id="peach" value="복숭아">복숭아</option>
+      <option id="apple" value="사과">사과</option>
+      <option id="melon" value="멜론">멜론</option>
+      <option id="banana" value="바나나">바나나</option>
+    </select>
+    <h3 id="result"></h3>
+    <script>
+      const select = document.getElementById("fruitSelect");
+      const result = document.getElementById("result");
+
+      select.addEventListener("change", () => {
+        const selectedFruit = select.value;
+
+        if (selectedFruit === "") {
+          result.textContent = "";
+        } else {
+          result.textContent = `선택된 과일 : ${selectedFruit}`;
+        }
+      });
+    </script> -->
+
+    <select
+      id="mySelect"
+      style="margin-bottom: 10px"
+      onchange="showSelectedValue()"
+    >
+      <option value="">-- 선택 --</option>
+      <option value="apple">사과</option>
+      <option value="banana">바나나</option>
+      <option value="orange">오렌지</option>
+    </select>
+
+    <div class="result" id="resultText">선택된 항목이 여기에 표시됩니다.</div>
+
+    <script>
+      function showSelectedValue() {
+        const select = document.getElementById("mySelect");
+        const selectedText = select.options[select.selectedIndex].text;
+        const selectedValue = select.value;
+
+        if (selectedValue === "") {
+          document.getElementById("resultText").innerText =
+            "선택된 항목이 여기에 표시됩니다.";
+        } else {
+          document.getElementById(
+            "resultText"
+          ).innerText = `선택된 항목: ${selectedText}`;
+        }
+      }
+    </script>
+  </body>
+</html>
