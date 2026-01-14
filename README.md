@@ -1,0 +1,2 @@
+# SKALA
+SKALA AI 3기 교육과정
