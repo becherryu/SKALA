@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>주문 처리 프로그램</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap");
+    </style>
+    <link rel="stylesheet" href="./css/style.module.css" />
+  </head>
+  <body>
+    <header><h1>고객 주문 처리</h1></header>
+
+    <main>
+      <div class="category">
+        <p>상품 재고</p>
+        <input type="number" id="amounts" required />
+      </div>
+      <div class="category">
+        <p>회원 등급</p>
+        <select id="membership" onchange="">
+          <option value="">-- 등급 선택 --</option>
+          <option value="VIP">VIP</option>
+          <option value="Gold">Gold</option>
+          <option value="Silver">Silver</option>
+          <option value="Bronze">Bronze</option>
+          <option value="na">비회원</option>
+        </select>
+      </div>
+      <div class="category">
+        <p>최소 주문 금액</p>
+        <input type="number" id="price" required />
+      </div>
+      <div class="category">
+        <p>배송 옵션</p>
+        <select id="ship" onchange="">
+          <option value="">-- 배송 방법 선택 --</option>
+          <option value="fast">빠른 배송</option>
+          <option value="standard">일반 배송</option>
+        </select>
+      </div>
+    </main>
+    <footer><button id="orderBtn">주문하기</button></footer>
+
+    <!-- JS 연결-->
+    <script type="module" src="./js/processOrder.js"></script>
+  </body>
+</html>
