@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>변환과 전환 효과</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .rec {
+        width: 100px;
+        height: 100px;
+        border-radius: 5px;
+        margin: 10px;
+        color: white;
+        background-color: green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transition: transform 0.5s; /* 부드러운 회전 */
+      }
+
+      .rec:hover {
+        background-color: yellow;
+      }
+
+      button {
+        padding: 10px 20px;
+        width: 100px;
+        margin: 10px;
+        color: white;
+        background-color: blue;
+        border: none;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="rec" id="rec">Hover me!</div>
+    <button id="btn">Click Me!</button>
+
+    <script>
+      const rec = document.getElementById("rec");
+      const btn = document.getElementById("btn");
+
+      btn.addEventListener("click", () => {
+        rec.style.transform = "rotate(45deg)";
+      });
+    </script>
+  </body>
+</html>
