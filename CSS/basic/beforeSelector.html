@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가상 선택자 - before, after</title>
+    <style>
+      p::before {
+        /* 선택자 기준 선택자의 엘리먼트 앞 공간을 선택 */
+        content: "<before>";
+      }
+      p::after {
+        /* 선택자 기준 선택자의 엘리먼트 뒷 공간을 선택 */
+        content: "<after>";
+      }
+    </style>
+  </head>
+  <body>
+    <p>Lorem, ipsum dolor.</p>
+  </body>
+</html>

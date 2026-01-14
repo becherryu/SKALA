@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>선택자 - 그룹, 자식, 하위, 인접 형제, 일반 형제</title>
+    <style>
+      /* 그룹 선택자
+        선택자1, 선택자2, ...., 선택자n */
+      p,
+      #title,
+      .red {
+        color: red;
+      }
+
+      /* 자식 선택자
+      부모 선택자 > 자식 선택자
+      box의 직계 자식인 p만 선택*/
+      .box > p {
+        color: red;
+      }
+
+      /* 하위 선택자
+      선택자1 선택자2 선택자3
+      div 안에 있는 모든 p 태그에 적용*/
+      div p {
+        color: red;
+      }
+
+      /* 인접 형제 선택자
+      A + B: A 바로 다음에 오는 B 요소
+      이전 선택자 + 대상 선택
+      h1 바로 뒤에 나오는 p에만 적용*/
+      h1 + h2 {
+        color: red;
+      }
+
+      /* 일반 형제 선택자
+      이전 선택자 ~ 대상 선택자
+      A ~ B: A 다음에 나오는 모든 형제 B 요소
+      h1 다음에 나오는 모든 h2 형제에 적용*/
+      h1 ~ h2 {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 그룹 선택자 -->
+    <p>test</p>
+
+    <!-- 자식 선택자 -->
+    <div class="box">
+      <p>lorem 1</p>
+      <div>
+        <p>lorem 2</p>
+      </div>
+      <p>lorem 3</p>
+    </div>
+
+    <!-- 하위 선택자 -->
+    <div>
+      <p>lorem 1</p>
+      <ul>
+        <li><p>lorem 2</p></li>
+        <li><p>lorem 3</p></li>
+      </ul>
+    </div>
+
+    <!-- 인접 형제 선택자 -->
+    <h1>lorem1</h1>
+    <!-- 이전 선택자-->
+    <h2>lorem2</h2>
+    <!-- 대상 선택자-->
+    <h2>lorem3</h2>
+
+    <!-- 일반 형제 선택자 -->
+    <h1>lorem1</h1>
+    <h2>lorem2</h2>
+    <h2>lorem3</h2>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+body {
+  background-color: snow;
+  padding: 10px;
+}
+
+div {
+  display: flex;
+  align-items: centers;
+}
+div small {
+  color: grey;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+.audio {
+  display: flex;
+  justify-content: flex-end;
+}
+div > audio {
+  width: 200px;
+  height: 40px;
+}
+
+hr {
+  margin-top: 20px;
+}
+
+.profileImages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 100px;
+  margin: 10px;
+}
+
+#git {
+  width: 20%;
+}
+
+span + iframe {
+  margin: 10px 0;
+}
+
+.intertest {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
