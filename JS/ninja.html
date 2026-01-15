@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const realHong = {
+        name: "홍길동",
+        age: 25,
+        job: "의적",
+        skills: ["검술", "전략", "분신"],
+        shadow: {
+          color: "검은색",
+        },
+      };
+
+      /* 얕은 복사, 깊은 복사 실습 진행 구역 */
+      console.log(realHong);
+
+      // real 홍길동에서 shadow 삭제
+      delete realHong.shadow;
+      console.log(realHong);
+
+      // 분신 : fakeHong 만들기 (깊은 복사))
+      const fakeHong = { ...realHong, skills: [...realHong.skills] };
+      fakeHong.skills.splice(2, 1);
+
+      console.log(fakeHong);
+    </script>
+  </body>
+</html>
