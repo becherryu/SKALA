@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SKALA 서점 관리 시스템</title>
+    <link rel="stylesheet" href="./CSS/styles.module.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap");
+    </style>
+  </head>
+  <body>
+    <header><h1 class="bookstore">SKALA 서점 관리 시스템</h1></header>
+    <main>
+      <!-- 옵션 선택 부분 -->
+      <section class="filteredSection">
+        <!-- 재고 옵션 선택 드롭 다운 -->
+        <select id="checkStock" onchange="">
+          <option value="all">전체</option>
+          <option value="available">재고 있음</option>
+          <option value="soldOut">품절</option>
+        </select>
+        <!-- 카테고리 선택 드롭 다운 -->
+        <select id="checkCategory" onchange="">
+          <option value="">-- 카테고리 선택 --</option>
+          <option value="programming">프로그래밍</option>
+          <option value="economics">경제</option>
+          <option value="novel">소설</option>
+          <option value="essay">에세이</option>
+        </select>
+
+        <!-- 초기화 버튼 -->
+        <button id="reset">초기화</button>
+      </section>
+
+      <!-- 전체 재고 목록 테이블 -->
+      <section class="table-wrapper">
+        <table id="bookTable" border="1">
+          <thead>
+            <tr>
+              <th scope="col">번호</th>
+              <th scope="col">ISBN</th>
+              <th scope="col">카테고리</th>
+              <th scope="col">제목</th>
+              <th scope="col">작가</th>
+              <th scope="col">출판사</th>
+              <th scope="col">가격</th>
+              <th scope="col">수량</th>
+              <th scope="col">재고 추가</th>
+            </tr>
+          </thead>
+          <tbody id="bookBody"></tbody>
+        </table>
+      </section>
+
+      <!-- 하단 섹션 -->
+      <div class="btm">
+        <section class="libraryInfo" id="libraryInfo"></section>
+        <section class="new-book-section">
+          <h3>새로운 책 등록</h3>
+
+          <!-- ISBN -->
+          <div class="form-row">
+            <label>ISBN</label>
+            <input type="number" id="isbn" placeholder="9788968483456" />
+          </div>
+
+          <div class="form-row">
+            <label for="category">카테고리</label>
+            <select id="category" required>
+              <option value="">선택</option>
+              <option value="프로그래밍">프로그래밍</option>
+              <option value="경제">경제</option>
+              <option value="소설">소설</option>
+              <option value="에세이">에세이</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="title">제목</label>
+            <input type="text" id="title" required />
+          </div>
+
+          <div class="form-row">
+            <label for="author">작가</label>
+            <input type="text" id="author" required />
+          </div>
+
+          <div class="form-row">
+            <label for="publisher">출판사</label>
+            <input type="text" id="publisher" required />
+          </div>
+
+          <div class="form-row">
+            <label for="price">가격</label>
+            <input type="number" id="price" min="0" required />
+          </div>
+
+          <div class="form-row">
+            <label for="stock">수량</label>
+            <input type="number" id="stock" min="0" required />
+          </div>
+
+          <div class="form-row center">
+            <button id="addNewBook">등록</button>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>@SKALA AI 1반 장아현</footer>
+
+    <!-- JS 파일 목록 -->
+    <script type="module" src="./JS/filteredBooks.js"></script>
+    <script type="module" src="./JS/resetFiltered.js"></script>
+    <script type="module" src="./JS/showBooks.js"></script>
+    <script type="module" src="./JS/libraryInfo.js"></script>
+    <script type="module" src="./JS/addStock.js"></script>
+    <script type="module" src="./JS/addNewBook.js"></script>
+  </body>
+</html>
