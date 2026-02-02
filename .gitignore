@@ -32,3 +32,6 @@ local.properties
 교육자료/**
 실습파일 제출물/**
 SKCT 예제/**
+
+.env
+my_project/**
