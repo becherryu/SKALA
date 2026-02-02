@@ -1,0 +1,6 @@
+- 파일: dangerFunc.py
+
+[라인: 17] | 위험 함수: eval
+[라인: 23] | 위험 함수: exec
+[라인: 29] | 위험 함수: pickle.load
+[라인: 35] | 위험 함수: os.system
