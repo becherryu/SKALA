@@ -1,0 +1,254 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fcfff4ff;
+  font-family: "Gowun Batang", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  background-color: #223000ff;
+  padding: 10px;
+  text-align: center;
+  margin: 10px;
+  border-radius: 20px;
+  width: 1200px;
+  min-width: 500px;
+}
+
+.bookstore {
+  color: white;
+}
+
+main {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+section {
+  margin-bottom: 10px;
+}
+
+.btm {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  padding-top: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #223000ff;
+}
+
+/* 옵션 선택 필터링 */
+.filteredSection {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.filteredSection select,
+.filteredSection button {
+  padding: 6px 10px;
+  font-size: 14px;
+  border: 1px solid #223000ff;
+  font-family: "Gowun Batang", serif;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.filteredSection button,
+#bookTable button {
+  background-color: #738644ff;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border: 1px solid #738644ff;
+  border-radius: 10px;
+
+  &:hover {
+    background-color: #223000ff;
+    border: 1px solid #223000ff;
+  }
+}
+
+/* 테이블 */
+.table-wrapper {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #a9b195ff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  min-width: 900px;
+  overflow-x: auto;
+  border-collapse: collapse;
+}
+
+#bookTable {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  table-layout: fixed;
+}
+
+#bookTable th,
+#bookTable td {
+  border: 1px solid #a9b195ff;
+  padding: 8px;
+  text-align: center;
+  font-size: 14px;
+  text-overflow: ellipsis;
+}
+
+#bookTable thead {
+  background-color: #d7e8acff;
+}
+
+#bookTable tbody tr:hover {
+  background-color: #f7ffe3ff;
+}
+
+#bookTable input {
+  width: 40px;
+  margin-right: 10px;
+  font-family: "Gowun Batang", serif;
+}
+
+#bookTable button {
+  width: 50px;
+  margin-right: 10px;
+  font-family: "Gowun Batang", serif;
+  padding: 3px 10px;
+}
+
+#bookTable th:nth-child(1),
+#bookTable td:nth-child(1) {
+  width: 25px;
+}
+#bookTable th:nth-child(2),
+#bookTable td:nth-child(2) {
+  width: 130px;
+}
+#bookTable th:nth-child(3),
+#bookTable td:nth-child(3) {
+  width: 70px;
+}
+#bookTable th:nth-child(4),
+#bookTable td:nth-child(4) {
+  width: 250px;
+}
+#bookTable th:nth-child(5),
+#bookTable td:nth-child(5) {
+  width: 120px;
+}
+#bookTable th:nth-child(6),
+#bookTable td:nth-child(6) {
+  width: 100px;
+}
+#bookTable th:nth-child(7),
+#bookTable td:nth-child(7) {
+  width: 50px;
+}
+#bookTable th:nth-child(8),
+#bookTable td:nth-child(8) {
+  width: 25px;
+}
+#bookTable th:nth-child(9),
+#bookTable td:nth-child(9) {
+  width: 120px;
+}
+
+/* 도서관 현황 전광판 */
+.libraryInfo {
+  background: #d7e8acff;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 20px;
+  width: 300px;
+  border: 1px solid #738644ff;
+}
+
+.libraryInfo h3 {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+}
+
+.libraryInfo p span {
+  font-weight: bolder;
+  color: #223000ff;
+}
+
+.infoTable {
+  margin: 0 15px;
+}
+
+/* 새로운 책 등록 */
+.new-book-section {
+  background: #d7e8acff;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 20px;
+  width: 800px;
+  border: 1px solid #738644ff;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px 16px;
+}
+
+.new-book-section h3 {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  grid-column: span 2;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.form-row label {
+  width: 70px;
+  font-weight: 600;
+}
+
+.form-row input,
+.form-row select {
+  flex: 1;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #738644ff;
+  font-family: "Gowun Batang", serif;
+}
+
+.form-row.center {
+  justify-content: center;
+  grid-column: span 2;
+}
+#addNewBook {
+  width: 150px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #738644ff;
+  color: white;
+  border-radius: 10px;
+  font-family: "Gowun Batang", serif;
+
+  &:hover {
+    background-color: #223000ff;
+  }
+}
