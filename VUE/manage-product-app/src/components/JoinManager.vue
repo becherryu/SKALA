@@ -11,7 +11,7 @@ function handleInputName(e) {
 </script>
 
 <template>
-  <div>
+  <div class="joinManager">
     <h2>🛍️ 상품 관리 시스템</h2>
     <section class="nameSection">
       <h3>
@@ -29,7 +29,18 @@ function handleInputName(e) {
   </div>
 </template>
 
-<style>
+<style scoped>
+.joinManager {
+  width: 350px;
+  border: 1px solid #d9d9d9;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
 .nameSection {
   display: flex;
   flex-direction: column;

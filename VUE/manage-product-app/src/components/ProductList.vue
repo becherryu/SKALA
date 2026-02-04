@@ -62,7 +62,7 @@ const filteredProducts = computed(() => {
 </script>
 
 <template>
-  <div>
+  <div class="productList">
     <h2>📦 상품 목록</h2>
 
     <!-- 상품 없음 -->
@@ -92,7 +92,22 @@ const filteredProducts = computed(() => {
   </div>
 </template>
 
-<style>
+<style scoped>
+.productList {
+  display: flex;
+  flex-direction: column;
+  width: 770px;
+  border: 1px solid #d9d9d9;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  min-width: 0;
+  min-height: 500px;
+}
+
 /* 가로 스크롤 컨테이너 */
 .productScroll {
   display: flex;

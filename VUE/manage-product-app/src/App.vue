@@ -4,8 +4,8 @@ import { ref, reactive, computed, watch } from "vue";
 import JoinManager from "@/components/JoinManager.vue";
 import AddProduct from "@/components/AddProduct.vue";
 import ProductList from "@/components/ProductList.vue";
-import ProductFilter from "./components/ProductFilter.vue";
-import CountProduct from "./components/CountProduct.vue";
+import ProductFilter from "@/components/ProductFilter.vue";
+import CountProduct from "@/components/CountProduct.vue";
 
 const manager = ref("");
 const products = reactive([]);
@@ -88,14 +88,13 @@ watch(
 
 <template>
   <header>
-    <JoinManager class="joinManger" @manager="enrollManager" />
+    <JoinManager @manager="enrollManager" />
     <CountProduct
       class="countProduct"
       :total-count="totalCount"
       :total-price="totalPrice"
     />
     <ProductFilter
-      class="box"
       v-model:search="search"
       v-model:category="category"
       v-model:sort="sort"
@@ -103,15 +102,10 @@ watch(
   </header>
   <main>
     <section>
-      <AddProduct
-        class="addProduct"
-        :canAdd="!!manager"
-        @add-product="addProduct"
-      />
+      <AddProduct :canAdd="!!manager" @add-product="addProduct" />
     </section>
     <section>
       <ProductList
-        class="productList"
         :products="products"
         :search="search"
         :category="category"

@@ -56,7 +56,7 @@ function handleAddBtn() {
 }
 </script>
 <template>
-  <div>
+  <div class="addProduct">
     <h2>➕ 새 상품 추가</h2>
     <div class="addSection">
       <input
@@ -81,7 +81,19 @@ function handleAddBtn() {
   </div>
 </template>
 
-<style>
+<style scoped>
+.addProduct {
+  width: 350px;
+  border: 1px solid #d9d9d9;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  min-height: 500px;
+}
+
 .addSection {
   display: flex;
   flex-direction: row;

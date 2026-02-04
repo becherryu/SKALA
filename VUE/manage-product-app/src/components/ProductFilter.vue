@@ -9,7 +9,7 @@ const emit = defineEmits(["update:search", "update:category", "update:sort"]);
 </script>
 
 <template>
-  <div class="inPfilter">
+  <div class="productFilter">
     <!-- 검색 -->
     <section>
       <input
@@ -99,15 +99,21 @@ const emit = defineEmits(["update:search", "update:category", "update:sort"]);
   </div>
 </template>
 
-<style>
-.inPfilter {
+<style scoped>
+.productFilter {
+  border: 1px solid #d9d9d9;
+  border-radius: 15px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+  width: 510px;
   gap: 20px;
 }
 
 .searchInput {
-  width: 30.5vw;
+  width: 400px;
   padding: 8px 12px;
   border-radius: 6px;
   border: 1px solid #d9d9d9;
@@ -156,7 +162,7 @@ const emit = defineEmits(["update:search", "update:category", "update:sort"]);
 
 hr {
   border: 0.5px solid #d9d9d9;
-  width: 35vw;
+  width: 500px;
   margin: 0;
 }
 </style>
