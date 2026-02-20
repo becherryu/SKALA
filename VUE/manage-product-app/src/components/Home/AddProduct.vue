@@ -58,24 +58,26 @@ function handleAddBtn() {
 <template>
   <div class="addProduct">
     <h2>➕ 새 상품 추가</h2>
-    <div class="addSection">
-      <input
-        type="text"
-        v-model="productName"
-        placeholder="상품명을 작성해주세요"
-      />
-      <button :disabled="productName.trim() === ''" @click="handleAddBtn">
-        추가
-      </button>
-    </div>
-    <div class="detailButton">
-      <button @click="isDetail = true">상세 모드</button>
-    </div>
+    <div class="addContent">
+      <div class="addSection">
+        <input
+          type="text"
+          v-model="productName"
+          placeholder="상품명을 작성해주세요"
+        />
+        <button :disabled="productName.trim() === ''" @click="handleAddBtn">
+          추가
+        </button>
+      </div>
+      <div class="detailButton">
+        <button @click="isDetail = true">상세 모드</button>
+      </div>
 
-    <div v-if="isDetail">
-      <ProductForm ref="productFormRef" />
-      <div class="simpleButton">
-        <button @click="isDetail = false">간단 모드</button>
+      <div v-if="isDetail">
+        <ProductForm ref="productFormRef" />
+        <div class="simpleButton">
+          <button @click="isDetail = false">간단 모드</button>
+        </div>
       </div>
     </div>
   </div>
@@ -83,15 +85,23 @@ function handleAddBtn() {
 
 <style scoped>
 .addProduct {
-  width: 350px;
+  width: 90%;
+  height: 63%;
   border: 1px solid #d9d9d9;
   border-radius: 15px;
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 15px;
   min-height: 500px;
+}
+
+.addContent {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .addSection {

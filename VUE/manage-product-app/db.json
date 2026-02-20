@@ -1,0 +1,432 @@
+{
+  "managers": [
+    {
+      "id": 1,
+      "name": "김민수",
+      "createdAt": 1715000000000
+    },
+    {
+      "id": 2,
+      "name": "이서연",
+      "createdAt": 1715100000000
+    },
+    {
+      "id": 3,
+      "name": "박지훈",
+      "createdAt": 1715200000000
+    },
+    {
+      "id": 4,
+      "name": "장아현",
+      "createdAt": 1715300000000
+    },
+    {
+      "name": "가나디",
+      "createdAt": 1770266873890,
+      "id": 5
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "블루투스 이어폰",
+      "category": "전자기기",
+      "price": 59000,
+      "stock": 25,
+      "describe": "무선 블루투스 이어폰",
+      "manager": "김민수",
+      "createdAt": 1769400000000
+    },
+    {
+      "id": 2,
+      "name": "노이즈 캔슬링 헤드폰",
+      "category": "전자기기",
+      "price": 129000,
+      "stock": 5,
+      "describe": "노이즈 캔슬링 지원 헤드폰",
+      "manager": "이서연",
+      "createdAt": 1769403600000
+    },
+    {
+      "id": 3,
+      "name": "게이밍 키보드",
+      "category": "전자기기",
+      "price": 89000,
+      "stock": 15,
+      "describe": "기계식 게이밍 키보드",
+      "manager": "박지훈",
+      "createdAt": 1769407200000
+    },
+    {
+      "id": 4,
+      "name": "무선 마우스",
+      "category": "전자기기",
+      "price": 39000,
+      "stock": 4,
+      "describe": "사무용 무선 마우스",
+      "manager": "장아현",
+      "createdAt": 1769410800000
+    },
+    {
+      "id": 5,
+      "name": "후드 티셔츠",
+      "category": "의류",
+      "price": 49000,
+      "stock": 20,
+      "describe": "면 소재 후드 티셔츠",
+      "manager": "김민수",
+      "createdAt": 1769414400000
+    },
+    {
+      "id": 6,
+      "name": "데님 팬츠",
+      "category": "의류",
+      "price": 69000,
+      "stock": 12,
+      "describe": "슬림핏 데님 팬츠",
+      "manager": "이서연",
+      "createdAt": 1769418000000
+    },
+    {
+      "id": 7,
+      "name": "겨울 니트",
+      "category": "의류",
+      "price": 54000,
+      "stock": 18,
+      "describe": "보온성이 좋은 니트",
+      "manager": "박지훈",
+      "createdAt": 1769421600000
+    },
+    {
+      "id": 8,
+      "name": "바람막이 자켓",
+      "category": "의류",
+      "price": 82000,
+      "stock": 3,
+      "describe": "가벼운 바람막이 자켓",
+      "manager": "장아현",
+      "createdAt": 1769425200000
+    },
+    {
+      "id": 9,
+      "name": "유기농 사과 세트",
+      "category": "식품",
+      "price": 69000,
+      "stock": 50,
+      "describe": "국내산 유기농 사과",
+      "manager": "김민수",
+      "createdAt": 1769428800000
+    },
+    {
+      "id": 10,
+      "name": "드립 커피 세트",
+      "category": "식품",
+      "price": 22000,
+      "stock": 35,
+      "describe": "원두 드립 커피 세트",
+      "manager": "이서연",
+      "createdAt": 1769432400000
+    },
+    {
+      "id": 11,
+      "name": "즉석 컵라면",
+      "category": "식품",
+      "price": 4500,
+      "stock": 120,
+      "describe": "간편 조리 컵라면",
+      "manager": "박지훈",
+      "createdAt": 1769436000000
+    },
+    {
+      "id": 12,
+      "name": "그래놀라 시리얼",
+      "category": "식품",
+      "price": 9800,
+      "stock": 2,
+      "describe": "아침 대용 그래놀라",
+      "manager": "장아현",
+      "createdAt": 1769439600000
+    },
+    {
+      "id": 13,
+      "name": "자바스크립트 입문서",
+      "category": "도서",
+      "price": 28000,
+      "stock": 14,
+      "describe": "초보자를 위한 JS 가이드",
+      "manager": "김민수",
+      "createdAt": 1769443200000
+    },
+    {
+      "id": 14,
+      "name": "Vue.js 실전 가이드",
+      "category": "도서",
+      "price": 32000,
+      "stock": 9,
+      "describe": "Vue 실무 개발서",
+      "manager": "이서연",
+      "createdAt": 1769446800000
+    },
+    {
+      "id": 69,
+      "name": "알고리즘 문제집",
+      "category": "도서",
+      "price": 30000,
+      "stock": 1,
+      "describe": "코딩 테스트 대비 문제집",
+      "manager": "박지훈",
+      "createdAt": 1769450400000
+    },
+    {
+      "id": 16,
+      "name": "클린 코드",
+      "category": "도서",
+      "price": 33000,
+      "stock": 8,
+      "describe": "개발자를 위한 코드 품질서",
+      "manager": "장아현",
+      "createdAt": 1769454000000
+    },
+    {
+      "id": 17,
+      "name": "텀블러",
+      "category": "기타",
+      "price": 18000,
+      "stock": 60,
+      "describe": "보온 보냉 텀블러",
+      "manager": "김민수",
+      "createdAt": 1769457600000
+    },
+    {
+      "id": 18,
+      "name": "에코백",
+      "category": "기타",
+      "price": 69000,
+      "stock": 45,
+      "describe": "캔버스 에코백",
+      "manager": "이서연",
+      "createdAt": 1769461200000
+    },
+    {
+      "id": 19,
+      "name": "데스크 매트",
+      "category": "기타",
+      "price": 22000,
+      "stock": 2,
+      "describe": "사무용 데스크 매트",
+      "manager": "박지훈",
+      "createdAt": 1769464800000
+    },
+    {
+      "id": 20,
+      "name": "다이어리",
+      "category": "기타",
+      "price": 12000,
+      "stock": 70,
+      "describe": "연간 다이어리",
+      "manager": "장아현",
+      "createdAt": 1769468400000
+    },
+    {
+      "id": 21,
+      "name": "스마트 워치",
+      "category": "전자기기",
+      "price": 199000,
+      "stock": 11,
+      "describe": "건강 관리 스마트 워치",
+      "manager": "김민수",
+      "createdAt": 1769472000000
+    },
+    {
+      "id": 22,
+      "name": "태블릿 거치대",
+      "category": "전자기기",
+      "price": 27000,
+      "stock": 33,
+      "describe": "각도 조절 태블릿 거치대",
+      "manager": "이서연",
+      "createdAt": 1769475600000
+    },
+    {
+      "id": 23,
+      "name": "맨투맨 티셔츠",
+      "category": "의류",
+      "price": 42000,
+      "stock": 4,
+      "describe": "기본 맨투맨 티셔츠",
+      "manager": "박지훈",
+      "createdAt": 1769479200000
+    },
+    {
+      "id": 24,
+      "name": "슬랙스 팬츠",
+      "category": "의류",
+      "price": 73000,
+      "stock": 14,
+      "describe": "포멀 슬랙스 팬츠",
+      "manager": "장아현",
+      "createdAt": 1769482800000
+    },
+    {
+      "id": 25,
+      "name": "견과류 믹스",
+      "category": "식품",
+      "price": 13500,
+      "stock": 55,
+      "describe": "건강 간식 견과류",
+      "manager": "김민수",
+      "createdAt": 1769486400000
+    },
+    {
+      "id": 26,
+      "name": "초콜릿 세트",
+      "category": "식품",
+      "price": 18000,
+      "stock": 0,
+      "describe": "수제 초콜릿 세트",
+      "manager": "이서연",
+      "createdAt": 1769490000000
+    },
+    {
+      "id": 27,
+      "name": "리팩터링",
+      "category": "도서",
+      "price": 35000,
+      "stock": 6,
+      "describe": "리팩터링 베스트셀러",
+      "manager": "박지훈",
+      "createdAt": 1769493600000
+    },
+    {
+      "id": 28,
+      "name": "IT 트렌드 2025",
+      "category": "도서",
+      "price": 29000,
+      "stock": 17,
+      "describe": "IT 산업 트렌드 분석",
+      "manager": "장아현",
+      "createdAt": 1769497200000
+    },
+    {
+      "id": 29,
+      "name": "무선 충전 패드",
+      "category": "전자기기",
+      "price": 32000,
+      "stock": 26,
+      "describe": "고속 무선 충전 패드",
+      "manager": "김민수",
+      "createdAt": 1769500800000
+    },
+    {
+      "id": 30,
+      "name": "USB 허브",
+      "category": "전자기기",
+      "price": 29000,
+      "stock": 0,
+      "describe": "멀티 USB 허브",
+      "manager": "이서연",
+      "createdAt": 1769504400000
+    },
+    {
+      "id": 31,
+      "name": "양말 세트",
+      "category": "의류",
+      "price": 69000,
+      "stock": 80,
+      "describe": "데일리 양말 세트",
+      "manager": "박지훈",
+      "createdAt": 1769508000000
+    },
+    {
+      "id": 32,
+      "name": "모자",
+      "category": "의류",
+      "price": 26900,
+      "stock": 34,
+      "describe": "캐주얼 캡 모자",
+      "manager": "장아현",
+      "createdAt": 1769511600000
+    },
+    {
+      "id": 33,
+      "name": "유기농 꿀",
+      "category": "식품",
+      "price": 21000,
+      "stock": 4,
+      "describe": "국내산 유기농 꿀",
+      "manager": "가나디",
+      "createdAt": 1769569200000,
+      "editedAt": 1770272218926
+    },
+    {
+      "id": 34,
+      "name": "단백질 바",
+      "category": "식품",
+      "price": 2500,
+      "stock": 0,
+      "describe": "운동용 단백질 바",
+      "manager": "이서연",
+      "createdAt": 1769518800000
+    },
+    {
+      "id": 35,
+      "name": "노트북 파우치",
+      "category": "기타",
+      "price": 33000,
+      "stock": 22,
+      "describe": "노트북 보호 파우치",
+      "manager": "박지훈",
+      "createdAt": 1769522400000
+    },
+    {
+      "id": 36,
+      "name": "펜 세트",
+      "category": "기타",
+      "price": 9000,
+      "stock": 65,
+      "describe": "고급 펜 세트",
+      "manager": "장아현",
+      "createdAt": 1769526000000
+    },
+    {
+      "id": 37,
+      "name": "블루라이트 차단 안경",
+      "category": "기타",
+      "price": 28000,
+      "stock": 0,
+      "describe": "눈 보호 안경",
+      "manager": "김민수",
+      "createdAt": 1769529600000
+    },
+    {
+      "id": 38,
+      "name": "메모 패드",
+      "category": "기타",
+      "price": 6000,
+      "stock": 120,
+      "describe": "사무용 메모 패드",
+      "manager": "이서연",
+      "createdAt": 1769533200000
+    },
+    {
+      "id": 39,
+      "name": "스마트 플러그",
+      "category": "전자기기",
+      "price": 24000,
+      "stock": 27,
+      "describe": "IoT 스마트 플러그",
+      "manager": "박지훈",
+      "createdAt": 1769536800000
+    },
+    {
+      "id": 40,
+      "name": "휴대용 선풍기",
+      "category": "전자기기",
+      "price": 19000,
+      "stock": 4,
+      "describe": "USB 충전 휴대용 선풍기",
+      "manager": "장아현",
+      "createdAt": 1769540400000
+    }
+  ]
+}

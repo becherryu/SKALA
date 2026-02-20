@@ -3,7 +3,7 @@ import { ref, watch } from "vue";
 import ProductForm from "./ProductForm.vue";
 import { validateProductForm } from "@/utils/formValidator";
 
-const emit = defineEmits(["update", "delete"]);
+const emit = defineEmits(["edit", "delete"]);
 
 const props = defineProps({
   product: {
@@ -50,11 +50,11 @@ function handleSave() {
     return;
   }
 
-  emit("update", {
+  emit("edit", {
     id: props.product.id,
     name: editName.value.trim(),
     ...formData,
-    updatedAt: Date.now(),
+    editedAt: Date.now(),
   });
 
   isEdit.value = false;
@@ -79,10 +79,10 @@ function applyStockChange(amount) {
     return;
   }
 
-  emit("update", {
+  emit("edit", {
     id: props.product.id,
     stock: props.product.stock + amount,
-    updatedAt: Date.now(),
+    editedAt: Date.now(),
   });
 
   stockNum.value = 0;
@@ -134,10 +134,13 @@ function applyStockChange(amount) {
           </p>
           <p>{{ product.describe || "설명 없음" }}</p>
           <p>
+            관리자 : <span>{{ product.manager }}</span>
+          </p>
+          <p>
             등록일 : <span>{{ formatDate(product.createdAt) }}</span>
           </p>
-          <p v-if="product.updatedAt">
-            수정일 : <span>{{ formatDate(product.updatedAt) }}</span>
+          <p v-if="product.editedAt">
+            수정일 : <span>{{ formatDate(product.editedAt) }}</span>
           </p>
         </template>
       </div>

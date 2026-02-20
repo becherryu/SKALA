@@ -107,13 +107,12 @@ const emit = defineEmits(["update:search", "update:category", "update:sort"]);
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 15px;
-  width: 510px;
+  width: 90%;
   gap: 20px;
 }
 
 .searchInput {
-  width: 400px;
+  width: 300px;
   padding: 8px 12px;
   border-radius: 6px;
   border: 1px solid #d9d9d9;
@@ -152,17 +151,19 @@ const emit = defineEmits(["update:search", "update:category", "update:sort"]);
 
 .categoryFilter {
   display: flex;
-  gap: 10px;
+  gap: 5px;
+  font-size: medium;
+  width: 400px;
 }
 
 .sortFilter {
   display: flex;
-  gap: 16px;
+  gap: 5px;
 }
 
 hr {
   border: 0.5px solid #d9d9d9;
-  width: 500px;
+  width: 100%;
   margin: 0;
 }
 </style>
