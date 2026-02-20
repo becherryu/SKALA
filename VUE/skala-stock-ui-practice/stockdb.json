@@ -1,0 +1,1282 @@
+{
+  "stocks": [
+    {
+      "id": 1,
+      "stockName": "AAPL - Apple Inc.",
+      "stockPrice": 299.44
+    },
+    {
+      "id": 2,
+      "stockName": "MSFT - Microsoft Corporation",
+      "stockPrice": 491.63
+    },
+    {
+      "id": 3,
+      "stockName": "GOOGL - Alphabet Inc.",
+      "stockPrice": 320.84
+    },
+    {
+      "id": 4,
+      "stockName": "AMZN - Amazon.com Inc.",
+      "stockPrice": 243.01
+    },
+    {
+      "id": 5,
+      "stockName": "META - Meta Platforms Inc.",
+      "stockPrice": 512.34
+    },
+    {
+      "id": 6,
+      "stockName": "NVDA - NVIDIA Corporation",
+      "stockPrice": 191.52
+    },
+    {
+      "id": 7,
+      "stockName": "TSLA - Tesla Inc.",
+      "stockPrice": 430.46
+    },
+    {
+      "id": 8,
+      "stockName": "JPM - JPMorgan Chase & Co.",
+      "stockPrice": 198.45
+    },
+    {
+      "id": 9,
+      "stockName": "JNJ - Johnson & Johnson",
+      "stockPrice": 167.23
+    },
+    {
+      "id": 10,
+      "stockName": "V - Visa Inc.",
+      "stockPrice": 285.67
+    },
+    {
+      "id": 11,
+      "stockName": "PG - Procter & Gamble Co.",
+      "stockPrice": 178.92
+    },
+    {
+      "id": 12,
+      "stockName": "AVGO - Broadcom Inc.",
+      "stockPrice": 1456.78
+    },
+    {
+      "id": 13,
+      "stockName": "MA - Mastercard Inc.",
+      "stockPrice": 467.89
+    },
+    {
+      "id": 14,
+      "stockName": "HD - Home Depot Inc.",
+      "stockPrice": 412.34
+    },
+    {
+      "id": 15,
+      "stockName": "CVX - Chevron Corporation",
+      "stockPrice": 156.78
+    },
+    {
+      "id": 16,
+      "stockName": "MRK - Merck & Co. Inc.",
+      "stockPrice": 123.45
+    },
+    {
+      "id": 17,
+      "stockName": "ABBV - AbbVie Inc.",
+      "stockPrice": 178.9
+    },
+    {
+      "id": 18,
+      "stockName": "PEP - PepsiCo Inc.",
+      "stockPrice": 189.23
+    },
+    {
+      "id": 19,
+      "stockName": "COST - Costco Wholesale Corporation",
+      "stockPrice": 856.78
+    },
+    {
+      "id": 20,
+      "stockName": "ADBE - Adobe Inc.",
+      "stockPrice": 567.89
+    },
+    {
+      "id": 21,
+      "stockName": "KO - The Coca-Cola Company",
+      "stockPrice": 62.34
+    },
+    {
+      "id": 22,
+      "stockName": "CSCO - Cisco Systems Inc.",
+      "stockPrice": 56.78
+    },
+    {
+      "id": 23,
+      "stockName": "WMT - Walmart Inc.",
+      "stockPrice": 178.45
+    },
+    {
+      "id": 24,
+      "stockName": "UNH - UnitedHealth Group Inc.",
+      "stockPrice": 523.67
+    },
+    {
+      "id": 25,
+      "stockName": "LLY - Eli Lilly and Company",
+      "stockPrice": 789.12
+    },
+    {
+      "id": 26,
+      "stockName": "XOM - Exxon Mobil Corporation",
+      "stockPrice": 112.34
+    },
+    {
+      "id": 27,
+      "stockName": "BRKB - Berkshire Hathaway Inc.",
+      "stockPrice": 412.56
+    },
+    {
+      "id": 28,
+      "stockName": "DIS - The Walt Disney Company",
+      "stockPrice": 98.76
+    },
+    {
+      "id": 29,
+      "stockName": "NKE - Nike Inc.",
+      "stockPrice": 112.34
+    },
+    {
+      "id": 30,
+      "stockName": "MCD - McDonald's Corporation",
+      "stockPrice": 298.45
+    },
+    {
+      "id": 31,
+      "stockName": "BA - The Boeing Company",
+      "stockPrice": 234.56
+    },
+    {
+      "id": 32,
+      "stockName": "CAT - Caterpillar Inc.",
+      "stockPrice": 345.67
+    },
+    {
+      "id": 33,
+      "stockName": "DE - Deere & Company",
+      "stockPrice": 412.34
+    },
+    {
+      "id": 34,
+      "stockName": "GE - General Electric Company",
+      "stockPrice": 156.78
+    },
+    {
+      "id": 35,
+      "stockName": "IBM - International Business Machines",
+      "stockPrice": 189.23
+    },
+    {
+      "id": 36,
+      "stockName": "INTC - Intel Corporation",
+      "stockPrice": 45.67
+    },
+    {
+      "id": 37,
+      "stockName": "AMD - Advanced Micro Devices",
+      "stockPrice": 178.9
+    },
+    {
+      "id": 38,
+      "stockName": "ORCL - Oracle Corporation",
+      "stockPrice": 123.45
+    },
+    {
+      "id": 39,
+      "stockName": "CRM - Salesforce Inc.",
+      "stockPrice": 298.76
+    },
+    {
+      "id": 40,
+      "stockName": "NFLX - Netflix Inc.",
+      "stockPrice": 567.89
+    },
+    {
+      "id": 41,
+      "stockName": "PYPL - PayPal Holdings Inc.",
+      "stockPrice": 67.89
+    },
+    {
+      "id": 42,
+      "stockName": "SQ - Block Inc.",
+      "stockPrice": 78.9
+    },
+    {
+      "id": 43,
+      "stockName": "BAC - Bank of America Corp.",
+      "stockPrice": 38.45
+    },
+    {
+      "id": 44,
+      "stockName": "WFC - Wells Fargo & Company",
+      "stockPrice": 56.78
+    },
+    {
+      "id": 45,
+      "stockName": "GS - Goldman Sachs Group Inc.",
+      "stockPrice": 412.34
+    },
+    {
+      "id": 46,
+      "stockName": "MS - Morgan Stanley",
+      "stockPrice": 98.76
+    },
+    {
+      "id": 47,
+      "stockName": "C - Citigroup Inc.",
+      "stockPrice": 62.34
+    },
+    {
+      "id": 48,
+      "stockName": "AXP - American Express Company",
+      "stockPrice": 234.56
+    },
+    {
+      "id": 49,
+      "stockName": "TGT - Target Corporation",
+      "stockPrice": 156.78
+    },
+    {
+      "id": 50,
+      "stockName": "LOW - Lowe's Companies Inc.",
+      "stockPrice": 234.56
+    },
+    {
+      "id": 51,
+      "stockName": "SBUX - Starbucks Corporation",
+      "stockPrice": 98.45
+    },
+    {
+      "id": 52,
+      "stockName": "CMG - Chipotle Mexican Grill Inc.",
+      "stockPrice": 3123.45
+    },
+    {
+      "id": 53,
+      "stockName": "NVDA - Nvidia Corporation",
+      "stockPrice": 191.52
+    },
+    {
+      "id": 54,
+      "stockName": "QCOM - Qualcomm Incorporated",
+      "stockPrice": 156.78
+    },
+    {
+      "id": 55,
+      "stockName": "TXN - Texas Instruments Incorporated",
+      "stockPrice": 178.9
+    },
+    {
+      "id": 56,
+      "stockName": "AMAT - Applied Materials Inc.",
+      "stockPrice": 234.56
+    },
+    {
+      "id": 57,
+      "stockName": "LRCX - Lam Research Corporation",
+      "stockPrice": 987.65
+    },
+    {
+      "id": 58,
+      "stockName": "MU - Micron Technology Inc.",
+      "stockPrice": 98.76
+    },
+    {
+      "id": 59,
+      "stockName": "ASML - ASML Holding N.V.",
+      "stockPrice": 912.34
+    },
+    {
+      "id": 60,
+      "stockName": "TSM - Taiwan Semiconductor Manufacturing",
+      "stockPrice": 145.67
+    },
+    {
+      "id": 61,
+      "stockName": "PFE - Pfizer Inc.",
+      "stockPrice": 28.9
+    },
+    {
+      "id": 62,
+      "stockName": "BMY - Bristol-Myers Squibb Company",
+      "stockPrice": 56.78
+    },
+    {
+      "id": 63,
+      "stockName": "GILD - Gilead Sciences Inc.",
+      "stockPrice": 78.9
+    },
+    {
+      "id": 64,
+      "stockName": "AMGN - Amgen Inc.",
+      "stockPrice": 312.34
+    },
+    {
+      "id": 65,
+      "stockName": "BIIB - Biogen Inc.",
+      "stockPrice": 234.56
+    },
+    {
+      "id": 66,
+      "stockName": "REGN - Regeneron Pharmaceuticals Inc.",
+      "stockPrice": 987.65
+    },
+    {
+      "id": 67,
+      "stockName": "MRNA - Moderna Inc.",
+      "stockPrice": 123.45
+    },
+    {
+      "id": 68,
+      "stockName": "VRTX - Vertex Pharmaceuticals Inc.",
+      "stockPrice": 456.78
+    },
+    {
+      "id": 69,
+      "stockName": "ZTS - Zoetis Inc.",
+      "stockPrice": 198.76
+    },
+    {
+      "id": 70,
+      "stockName": "DHR - Danaher Corporation",
+      "stockPrice": 256.78
+    },
+    {
+      "id": 71,
+      "stockName": "TMO - Thermo Fisher Scientific Inc.",
+      "stockPrice": 567.89
+    },
+    {
+      "id": 72,
+      "stockName": "ISRG - Intuitive Surgical Inc.",
+      "stockPrice": 412.34
+    },
+    {
+      "id": 73,
+      "stockName": "MDT - Medtronic plc",
+      "stockPrice": 109.12
+    },
+    {
+      "id": 74,
+      "stockName": "ABT - Abbott Laboratories",
+      "stockPrice": 123.45
+    },
+    {
+      "id": 75,
+      "stockName": "SYK - Stryker Corporation",
+      "stockPrice": 345.67
+    },
+    {
+      "id": 76,
+      "stockName": "BSX - Boston Scientific Corporation",
+      "stockPrice": 78.9
+    },
+    {
+      "id": 77,
+      "stockName": "EW - Edwards Lifesciences Corporation",
+      "stockPrice": 89.12
+    },
+    {
+      "id": 78,
+      "stockName": "DXCM - Dexcom Inc.",
+      "stockPrice": 145.67
+    },
+    {
+      "id": 79,
+      "stockName": "ILMN - Illumina Inc.",
+      "stockPrice": 123.45
+    },
+    {
+      "id": 80,
+      "stockName": "PLTR - Palantir Technologies Inc.",
+      "stockPrice": 23.45
+    },
+    {
+      "id": 81,
+      "stockName": "SNOW - Snowflake Inc.",
+      "stockPrice": 178.9
+    },
+    {
+      "id": 82,
+      "stockName": "DDOG - Datadog Inc.",
+      "stockPrice": 134.56
+    },
+    {
+      "id": 83,
+      "stockName": "CRWD - CrowdStrike Holdings Inc.",
+      "stockPrice": 345.67
+    },
+    {
+      "id": 84,
+      "stockName": "ZS - Zscaler Inc.",
+      "stockPrice": 234.56
+    },
+    {
+      "id": 85,
+      "stockName": "FTNT - Fortinet Inc.",
+      "stockPrice": 67.89
+    },
+    {
+      "id": 86,
+      "stockName": "PANW - Palo Alto Networks Inc.",
+      "stockPrice": 378.9
+    },
+    {
+      "id": 87,
+      "stockName": "NOW - ServiceNow Inc.",
+      "stockPrice": 789.12
+    },
+    {
+      "id": 88,
+      "stockName": "WDAY - Workday Inc.",
+      "stockPrice": 298.76
+    },
+    {
+      "id": 89,
+      "stockName": "TEAM - Atlassian Corporation",
+      "stockPrice": 234.56
+    },
+    {
+      "id": 90,
+      "stockName": "ZM - Zoom Video Communications Inc.",
+      "stockPrice": 67.89
+    },
+    {
+      "id": 91,
+      "stockName": "DOCU - DocuSign Inc.",
+      "stockPrice": 56.78
+    },
+    {
+      "id": 92,
+      "stockName": "TWLO - Twilio Inc.",
+      "stockPrice": 45.67
+    },
+    {
+      "id": 93,
+      "stockName": "SHOP - Shopify Inc.",
+      "stockPrice": 78.9
+    },
+    {
+      "id": 94,
+      "stockName": "ETSY - Etsy Inc.",
+      "stockPrice": 67.89
+    },
+    {
+      "id": 95,
+      "stockName": "ABNB - Airbnb Inc.",
+      "stockPrice": 156.78
+    },
+    {
+      "id": 96,
+      "stockName": "UBER - Uber Technologies Inc.",
+      "stockPrice": 67.89
+    },
+    {
+      "id": 97,
+      "stockName": "LYFT - Lyft Inc.",
+      "stockPrice": 12.34
+    },
+    {
+      "id": 98,
+      "stockName": "RIVN - Rivian Automotive Inc.",
+      "stockPrice": 15.67
+    },
+    {
+      "id": 99,
+      "stockName": "LCID - Lucid Group Inc.",
+      "stockPrice": 3.45
+    },
+    {
+      "id": 100,
+      "stockName": "ROKU - Roku Inc.",
+      "stockPrice": 78.9
+    }
+  ],
+  "players": [
+    {
+      "id": 0,
+      "playerId": "1",
+      "playerPassword": "1234",
+      "playerMoney": 12278.73
+    },
+    {
+      "id": 1,
+      "playerId": "2",
+      "playerPassword": "1234",
+      "playerMoney": 8708.62
+    },
+    {
+      "id": 2,
+      "playerId": "3",
+      "playerPassword": "1234",
+      "playerMoney": 10000
+    },
+    {
+      "id": 3,
+      "playerId": "4",
+      "playerPassword": "1234",
+      "playerMoney": 10000
+    },
+    {
+      "id": 4,
+      "playerId": "5",
+      "playerPassword": "1234",
+      "playerMoney": 10000
+    },
+    {
+      "id": 5,
+      "playerId": "6",
+      "playerPassword": "1234",
+      "playerMoney": 10000
+    },
+    {
+      "id": 6,
+      "playerId": "7",
+      "playerPassword": "1234",
+      "playerMoney": 10000
+    },
+    {
+      "id": 7,
+      "playerId": "8",
+      "playerPassword": "1234",
+      "playerMoney": 10000
+    },
+    {
+      "id": 8,
+      "playerId": "9",
+      "playerPassword": "1234",
+      "playerMoney": 10000
+    },
+    {
+      "id": 9,
+      "playerId": "10",
+      "playerPassword": "1234",
+      "playerMoney": 10000
+    },
+    {
+      "id": 10,
+      "playerId": "11",
+      "playerPassword": "1234",
+      "playerMoney": 10000
+    },
+    {
+      "id": 11,
+      "playerId": "12",
+      "playerPassword": "1234",
+      "playerMoney": 10000
+    },
+    {
+      "id": 12,
+      "playerId": "13",
+      "playerPassword": "1234",
+      "playerMoney": 10000
+    },
+    {
+      "id": 13,
+      "playerId": "14",
+      "playerPassword": "1234",
+      "playerMoney": 10000
+    },
+    {
+      "id": 14,
+      "playerId": "15",
+      "playerPassword": "1234",
+      "playerMoney": 10000
+    },
+    {
+      "id": 15,
+      "playerId": "16",
+      "playerPassword": "1234",
+      "playerMoney": 10000
+    },
+    {
+      "id": 16,
+      "playerId": "17",
+      "playerPassword": "1234",
+      "playerMoney": 10000
+    },
+    {
+      "id": 17,
+      "playerId": "18",
+      "playerPassword": "1234",
+      "playerMoney": 10000
+    },
+    {
+      "id": 18,
+      "playerId": "19",
+      "playerPassword": "1234",
+      "playerMoney": 10000
+    },
+    {
+      "id": 19,
+      "playerId": "20",
+      "playerPassword": "1234",
+      "playerMoney": 10000
+    },
+    {
+      "playerId": "0",
+      "playerPassword": "1234",
+      "playerMoney": 10000,
+      "id": 20
+    },
+    {
+      "playerId": "22",
+      "playerPassword": "1234",
+      "playerMoney": 39234.16,
+      "id": 22
+    },
+    {
+      "playerId": "3024",
+      "playerPassword": "1234",
+      "playerMoney": 74.29999999999927,
+      "id": 23
+    }
+  ],
+  "playerStocks": [
+    {
+      "id": 2,
+      "playerId": "1",
+      "stockId": 2,
+      "quantity": 5
+    },
+    {
+      "id": 3,
+      "playerId": "1",
+      "stockId": 3,
+      "quantity": 8
+    },
+    {
+      "id": 4,
+      "playerId": "2",
+      "stockId": 4,
+      "quantity": 12
+    },
+    {
+      "id": 5,
+      "playerId": "2",
+      "stockId": 5,
+      "quantity": 6
+    },
+    {
+      "id": 6,
+      "playerId": "2",
+      "stockId": 6,
+      "quantity": 15
+    },
+    {
+      "id": 7,
+      "playerId": "2",
+      "stockId": 7,
+      "quantity": 20
+    },
+    {
+      "id": 8,
+      "playerId": "3",
+      "stockId": 8,
+      "quantity": 20
+    },
+    {
+      "id": 9,
+      "playerId": "3",
+      "stockId": 9,
+      "quantity": 25
+    },
+    {
+      "id": 10,
+      "playerId": "3",
+      "stockId": 10,
+      "quantity": 10
+    },
+    {
+      "id": 11,
+      "playerId": "4",
+      "stockId": 11,
+      "quantity": 18
+    },
+    {
+      "id": 12,
+      "playerId": "4",
+      "stockId": 12,
+      "quantity": 2
+    },
+    {
+      "id": 13,
+      "playerId": "4",
+      "stockId": 13,
+      "quantity": 6
+    },
+    {
+      "id": 14,
+      "playerId": "4",
+      "stockId": 14,
+      "quantity": 8
+    },
+    {
+      "id": 15,
+      "playerId": "5",
+      "stockId": 15,
+      "quantity": 30
+    },
+    {
+      "id": 16,
+      "playerId": "5",
+      "stockId": 16,
+      "quantity": 25
+    },
+    {
+      "id": 17,
+      "playerId": "5",
+      "stockId": 17,
+      "quantity": 20
+    },
+    {
+      "id": 18,
+      "playerId": "5",
+      "stockId": 18,
+      "quantity": 15
+    },
+    {
+      "id": 19,
+      "playerId": "6",
+      "stockId": 19,
+      "quantity": 3
+    },
+    {
+      "id": 20,
+      "playerId": "6",
+      "stockId": 20,
+      "quantity": 5
+    },
+    {
+      "id": 21,
+      "playerId": "6",
+      "stockId": 21,
+      "quantity": 50
+    },
+    {
+      "id": 22,
+      "playerId": "6",
+      "stockId": 22,
+      "quantity": 60
+    },
+    {
+      "id": 23,
+      "playerId": "7",
+      "stockId": 23,
+      "quantity": 20
+    },
+    {
+      "id": 24,
+      "playerId": "7",
+      "stockId": 24,
+      "quantity": 6
+    },
+    {
+      "id": 25,
+      "playerId": "7",
+      "stockId": 25,
+      "quantity": 4
+    },
+    {
+      "id": 26,
+      "playerId": "7",
+      "stockId": 26,
+      "quantity": 30
+    },
+    {
+      "id": 27,
+      "playerId": "8",
+      "stockId": 27,
+      "quantity": 8
+    },
+    {
+      "id": 28,
+      "playerId": "8",
+      "stockId": 28,
+      "quantity": 35
+    },
+    {
+      "id": 29,
+      "playerId": "8",
+      "stockId": 29,
+      "quantity": 30
+    },
+    {
+      "id": 30,
+      "playerId": "9",
+      "stockId": 30,
+      "quantity": 12
+    },
+    {
+      "id": 31,
+      "playerId": "9",
+      "stockId": 31,
+      "quantity": 15
+    },
+    {
+      "id": 32,
+      "playerId": "9",
+      "stockId": 32,
+      "quantity": 10
+    },
+    {
+      "id": 33,
+      "playerId": "9",
+      "stockId": 33,
+      "quantity": 8
+    },
+    {
+      "id": 34,
+      "playerId": "10",
+      "stockId": 34,
+      "quantity": 25
+    },
+    {
+      "id": 35,
+      "playerId": "10",
+      "stockId": 35,
+      "quantity": 20
+    },
+    {
+      "id": 36,
+      "playerId": "10",
+      "stockId": 36,
+      "quantity": 75
+    },
+    {
+      "id": 37,
+      "playerId": "11",
+      "stockId": 37,
+      "quantity": 20
+    },
+    {
+      "id": 38,
+      "playerId": "11",
+      "stockId": 38,
+      "quantity": 30
+    },
+    {
+      "id": 39,
+      "playerId": "11",
+      "stockId": 39,
+      "quantity": 12
+    },
+    {
+      "id": 40,
+      "playerId": "11",
+      "stockId": 40,
+      "quantity": 6
+    },
+    {
+      "id": 41,
+      "playerId": "12",
+      "stockId": 41,
+      "quantity": 50
+    },
+    {
+      "id": 42,
+      "playerId": "12",
+      "stockId": 42,
+      "quantity": 45
+    },
+    {
+      "id": 43,
+      "playerId": "12",
+      "stockId": 43,
+      "quantity": 90
+    },
+    {
+      "id": 44,
+      "playerId": "13",
+      "stockId": 44,
+      "quantity": 60
+    },
+    {
+      "id": 45,
+      "playerId": "13",
+      "stockId": 45,
+      "quantity": 8
+    },
+    {
+      "id": 46,
+      "playerId": "13",
+      "stockId": 46,
+      "quantity": 35
+    },
+    {
+      "id": 47,
+      "playerId": "13",
+      "stockId": 47,
+      "quantity": 55
+    },
+    {
+      "id": 48,
+      "playerId": "14",
+      "stockId": 48,
+      "quantity": 15
+    },
+    {
+      "id": 49,
+      "playerId": "14",
+      "stockId": 49,
+      "quantity": 22
+    },
+    {
+      "id": 50,
+      "playerId": "14",
+      "stockId": 50,
+      "quantity": 15
+    },
+    {
+      "id": 51,
+      "playerId": "15",
+      "stockId": 51,
+      "quantity": 35
+    },
+    {
+      "id": 52,
+      "playerId": "15",
+      "stockId": 52,
+      "quantity": 1
+    },
+    {
+      "id": 53,
+      "playerId": "15",
+      "stockId": 53,
+      "quantity": 18
+    },
+    {
+      "id": 54,
+      "playerId": "16",
+      "stockId": 54,
+      "quantity": 22
+    },
+    {
+      "id": 55,
+      "playerId": "16",
+      "stockId": 55,
+      "quantity": 20
+    },
+    {
+      "id": 56,
+      "playerId": "16",
+      "stockId": 56,
+      "quantity": 12
+    },
+    {
+      "id": 57,
+      "playerId": "16",
+      "stockId": 57,
+      "quantity": 3
+    },
+    {
+      "id": 58,
+      "playerId": "17",
+      "stockId": 58,
+      "quantity": 35
+    },
+    {
+      "id": 59,
+      "playerId": "17",
+      "stockId": 59,
+      "quantity": 3
+    },
+    {
+      "id": 60,
+      "playerId": "17",
+      "stockId": 60,
+      "quantity": 25
+    },
+    {
+      "id": 61,
+      "playerId": "18",
+      "stockId": 61,
+      "quantity": 120
+    },
+    {
+      "id": 62,
+      "playerId": "18",
+      "stockId": 62,
+      "quantity": 60
+    },
+    {
+      "id": 63,
+      "playerId": "18",
+      "stockId": 63,
+      "quantity": 45
+    },
+    {
+      "id": 64,
+      "playerId": "18",
+      "stockId": 64,
+      "quantity": 11
+    },
+    {
+      "id": 65,
+      "playerId": "19",
+      "stockId": 65,
+      "quantity": 15
+    },
+    {
+      "id": 66,
+      "playerId": "19",
+      "stockId": 66,
+      "quantity": 3
+    },
+    {
+      "id": 67,
+      "playerId": "19",
+      "stockId": 67,
+      "quantity": 28
+    },
+    {
+      "id": 68,
+      "playerId": "19",
+      "stockId": 68,
+      "quantity": 7
+    },
+    {
+      "id": 69,
+      "playerId": "20",
+      "stockId": 69,
+      "quantity": 18
+    },
+    {
+      "id": 70,
+      "playerId": "20",
+      "stockId": 70,
+      "quantity": 14
+    },
+    {
+      "id": 71,
+      "playerId": "20",
+      "stockId": 71,
+      "quantity": 6
+    },
+    {
+      "id": 72,
+      "playerId": "20",
+      "stockId": 72,
+      "quantity": 8
+    },
+    {
+      "id": 73,
+      "playerId": "1",
+      "stockId": 73,
+      "quantity": 40
+    },
+    {
+      "id": 74,
+      "playerId": "2",
+      "stockId": 74,
+      "quantity": 45
+    },
+    {
+      "id": 75,
+      "playerId": "3",
+      "stockId": 75,
+      "quantity": 12
+    },
+    {
+      "id": 76,
+      "playerId": "4",
+      "stockId": 76,
+      "quantity": 55
+    },
+    {
+      "id": 77,
+      "playerId": "5",
+      "stockId": 77,
+      "quantity": 50
+    },
+    {
+      "id": 78,
+      "playerId": "6",
+      "stockId": 78,
+      "quantity": 30
+    },
+    {
+      "id": 79,
+      "playerId": "7",
+      "stockId": 79,
+      "quantity": 45
+    },
+    {
+      "id": 80,
+      "playerId": "8",
+      "stockId": 80,
+      "quantity": 40
+    },
+    {
+      "id": 81,
+      "playerId": "9",
+      "stockId": 81,
+      "quantity": 150
+    },
+    {
+      "id": 82,
+      "playerId": "10",
+      "stockId": 82,
+      "quantity": 25
+    },
+    {
+      "id": 83,
+      "playerId": "11",
+      "stockId": 83,
+      "quantity": 10
+    },
+    {
+      "id": 84,
+      "playerId": "12",
+      "stockId": 84,
+      "quantity": 8
+    },
+    {
+      "id": 85,
+      "playerId": "13",
+      "stockId": 85,
+      "quantity": 65
+    },
+    {
+      "id": 86,
+      "playerId": "14",
+      "stockId": 86,
+      "quantity": 9
+    },
+    {
+      "id": 87,
+      "playerId": "15",
+      "stockId": 87,
+      "quantity": 4
+    },
+    {
+      "id": 88,
+      "playerId": "16",
+      "stockId": 88,
+      "quantity": 9
+    },
+    {
+      "id": 89,
+      "playerId": "17",
+      "stockId": 89,
+      "quantity": 35
+    },
+    {
+      "id": 90,
+      "playerId": "18",
+      "stockId": 90,
+      "quantity": 50
+    },
+    {
+      "id": 91,
+      "playerId": "19",
+      "stockId": 91,
+      "quantity": 60
+    },
+    {
+      "id": 92,
+      "playerId": "20",
+      "stockId": 92,
+      "quantity": 65
+    },
+    {
+      "id": 93,
+      "playerId": "1",
+      "stockId": 93,
+      "quantity": 45
+    },
+    {
+      "id": 94,
+      "playerId": "2",
+      "stockId": 94,
+      "quantity": 55
+    },
+    {
+      "id": 95,
+      "playerId": "3",
+      "stockId": 95,
+      "quantity": 22
+    },
+    {
+      "id": 96,
+      "playerId": "4",
+      "stockId": 96,
+      "quantity": 22
+    },
+    {
+      "id": 97,
+      "playerId": "5",
+      "stockId": 97,
+      "quantity": 280
+    },
+    {
+      "id": 98,
+      "playerId": "6",
+      "stockId": 98,
+      "quantity": 280
+    },
+    {
+      "id": 99,
+      "playerId": "7",
+      "stockId": 99,
+      "quantity": 350
+    },
+    {
+      "id": 100,
+      "playerId": "8",
+      "stockId": 100,
+      "quantity": 45
+    },
+    {
+      "playerId": "1",
+      "stockId": 10,
+      "quantity": 1,
+      "id": 101
+    },
+    {
+      "playerId": "3024",
+      "stockId": 10,
+      "quantity": 20,
+      "id": 102
+    },
+    {
+      "playerId": "3024",
+      "stockId": 3,
+      "quantity": 4,
+      "id": 103
+    },
+    {
+      "playerId": "3024",
+      "stockId": 26,
+      "quantity": 1,
+      "id": 104
+    },
+    {
+      "playerId": "3024",
+      "stockId": 34,
+      "quantity": 5,
+      "id": 105
+    },
+    {
+      "playerId": "3024",
+      "stockId": 1,
+      "quantity": 2,
+      "id": 106
+    },
+    {
+      "playerId": "3024",
+      "stockId": 4,
+      "quantity": 6,
+      "id": 107
+    }
+  ]
+}
