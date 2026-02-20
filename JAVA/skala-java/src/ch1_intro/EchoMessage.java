@@ -11,8 +11,9 @@ public class EchoMessage {
         try (Scanner scanner = new Scanner(System.in) // 입력 도구 생성
         ) {
             System.out.println("메시지를 입력하세요 (종료하려면 'quit' 또는 'exit' 입력):");
-            String input;
-            while ((input = scanner.nextLine()) != null) {
+
+            while (scanner.hasNextLine()) {
+                String input = scanner.nextLine();
                 if (input.equals("quit") || input.equals("exit")) {
                     System.out.println("프로그램을 종료합니다.");
                     break; // 루프 종료

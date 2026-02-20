@@ -10,7 +10,7 @@ public class HelloSkala {
         // 스칼라에 + 1초 휴식 + 오신 것을 환영합니다 출력
         System.out.print("스칼라에");
         try {
-            Thread.sleep(5000); // 1초 휴식
+            Thread.sleep(5000); // 5초 휴식
         } catch (InterruptedException e) {
             // e.printStackTrace(); <- 별로 좋지 않은 에러 처리
             System.out.println("대기 중 오류 발생 : " + e.getMessage());

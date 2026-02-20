@@ -12,7 +12,8 @@ public class StockHistory {
         System.out.println("=================================================");
 
         for (int i = 0; i < stocks.length; i++) {
-            double changeRate = ((double) (todayPrices[i] - yesterdayPrices[i]) / yesterdayPrices[i]) * 100;
+            double changeRate = yesterdayPrices[i] == 0 ? 0
+                    : ((double) (todayPrices[i] - yesterdayPrices[i]) / yesterdayPrices[i]) * 100;
             System.out.printf("%-13s%,10d%,13d%+11.2f%%%n",
                     stocks[i], yesterdayPrices[i], todayPrices[i], changeRate);
         }
