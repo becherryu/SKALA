@@ -70,19 +70,8 @@ public class SkalaStockMarket {
     }
 
     private void buyStock() {
-        List<Stock> stocks = stockRepository.getAllStocks();
-        if (stocks.isEmpty()) {
-            stockView.showMessage("거래 가능한 주식이 없습니다.");
-            return;
-        }
-
-        stockView.displayStockList(stocks);
-        int index = stockView.getStockIndexFromUser();
-        Stock selectedStock = stockRepository.findStock(index);
-        if (selectedStock == null) {
-            stockView.showMessage("실패: 올바른 주식 번호를 선택하세요.");
-            return;
-        }
+        Stock selectedStock = selectMarketStockFromUser();
+        if (selectedStock == null) return;
 
         int quantity = stockView.getQuantityFromUser();
         String result = stockService.buyStock(player, selectedStock, quantity);
@@ -90,10 +79,19 @@ public class SkalaStockMarket {
     }
 
     private void sellStock() {
+        Stock selectedStock = selectMarketStockFromUser();
+        if (selectedStock == null) return;
+
+        int quantity = stockView.getQuantityFromUser();
+        String result = stockService.sellStock(player, selectedStock, quantity);
+        stockView.showMessage(result);
+    }
+
+    private Stock selectMarketStockFromUser() {
         List<Stock> marketStocks = stockRepository.getAllStocks();
         if (marketStocks.isEmpty()) {
             stockView.showMessage("거래 가능한 주식이 없습니다.");
-            return;
+            return null;
         }
 
         stockView.displayStockList(marketStocks);
@@ -101,11 +99,8 @@ public class SkalaStockMarket {
         Stock selectedStock = stockRepository.findStock(index);
         if (selectedStock == null) {
             stockView.showMessage("실패: 올바른 주식 번호를 선택하세요.");
-            return;
+            return null;
         }
-
-        int quantity = stockView.getQuantityFromUser();
-        String result = stockService.sellStock(player, selectedStock, quantity);
-        stockView.showMessage(result);
+        return selectedStock;
     }
 }

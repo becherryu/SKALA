@@ -52,7 +52,7 @@
 ## 실행 방법
 
 ```bash
-cd /Users/ahyeon/Desktop/SKALA/JAVA/skala-stock-console
+cd <프로젝트-루트-경로>/skala-stock-console
 javac -d bin src/*.java
 java -cp bin App
 ```

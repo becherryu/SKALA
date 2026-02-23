@@ -76,8 +76,7 @@ public class StockService {
         }
 
         try {
-            Stock delta = new Stock(marketStock.getName(), unitPrice, 0).setQuantity(-quantity);
-            player.getPortfolio().updateStock(delta);
+            player.getPortfolio().decreaseStockQuantity(marketStock.getName(), quantity, unitPrice);
             player.deposit(totalPrice);
             persistIfNeeded();
             return "성공: " + marketStock.getName() + " " + quantity + "주 매도 완료";

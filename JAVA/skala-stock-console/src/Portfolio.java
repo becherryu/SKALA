@@ -41,6 +41,33 @@ public class Portfolio {
         return this;
     }
 
+    // 보유 주식 수량 감소(매도용)
+    public synchronized Portfolio decreaseStockQuantity(String stockName, int quantity, int latestPrice) {
+        validateStockName(stockName);
+        if (quantity <= 0) {
+            throw new IllegalArgumentException("감소 수량은 1 이상이어야 합니다.");
+        }
+        if (latestPrice < 0) {
+            throw new IllegalArgumentException("가격은 0 이상이어야 합니다.");
+        }
+
+        Stock existing = stocks.get(stockName);
+        if (existing == null) {
+            throw new IllegalArgumentException("해당 주식이 포트폴리오에 존재하지 않습니다.");
+        }
+        if (existing.getQuantity() < quantity) {
+            throw new IllegalArgumentException("보유 수량이 부족합니다.");
+        }
+
+        int newQuantity = existing.getQuantity() - quantity;
+        existing.setQuantity(newQuantity);
+        existing.setPrice(latestPrice);
+        if (newQuantity == 0) {
+            stocks.remove(stockName);
+        }
+        return this;
+    }
+
     // 내부 수량 및 가격 업데이트 로직
     private void updateQuantityAndPrice(Stock existing, Stock incoming) {
         int newQuantity = existing.getQuantity() + incoming.getQuantity();
