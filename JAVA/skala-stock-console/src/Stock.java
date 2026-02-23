@@ -13,7 +13,33 @@ public class Stock {
     }
 
     // Getters
+    public String getName() {
+        return name;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
     // Setters
+    public Stock setName(String name) {
+        this.name = name;
+        return this;
+    }
+
+    public Stock setPrice(int price) {
+        this.price = price;
+        return this;
+    }
+
+    public Stock setQuantity(int quantity) {
+        this.quantity = quantity;
+        return this;
+    }
 
     @Override
     public String toString() {
