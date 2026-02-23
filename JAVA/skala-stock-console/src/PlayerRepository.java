@@ -11,7 +11,7 @@ import java.util.Map;
  */
 public class PlayerRepository {
     private static final String PLAYER_FILE = "players.txt";
-    private static final Path PLAYER_FILE_PATH = Path.of(PLAYER_FILE);
+    private static final Path PLAYER_FILE_PATH = resolveDataPath(PLAYER_FILE);
     private final Map<String, Player> playerMap = new LinkedHashMap<>();
     private final PlayerMapper mapper = new PlayerMapper();
 
@@ -45,6 +45,7 @@ public class PlayerRepository {
                 .map(mapper::toLine)
                 .toList();
         try {
+            Files.createDirectories(PLAYER_FILE_PATH.getParent());
             Files.write(PLAYER_FILE_PATH, lines, StandardCharsets.UTF_8);
         } catch (IOException e) {
             throw new IllegalStateException("players 파일 저장 실패: " + PLAYER_FILE_PATH, e);
@@ -67,5 +68,19 @@ public class PlayerRepository {
         if (id == null || id.isBlank()) {
             throw new IllegalArgumentException("플레이어 ID는 비어 있을 수 없습니다.");
         }
+    }
+
+    private static Path resolveDataPath(String fileName) {
+        Path dataInCwd = Path.of("data", fileName);
+        if (Files.isDirectory(Path.of("data"))) {
+            return dataInCwd;
+        }
+
+        Path dataInParent = Path.of("..", "data", fileName);
+        if (Files.isDirectory(Path.of("..", "data"))) {
+            return dataInParent.normalize();
+        }
+
+        return dataInCwd;
     }
 }
