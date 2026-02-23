@@ -19,9 +19,7 @@ public class StockView {
 
     public int promptForInitialMoney() {
         System.out.print("초기 투자금을 입력하세요: ");
-        int money = scanner.nextInt();
-        scanner.nextLine();
-        return money;
+        return parseIntInput(scanner.nextLine(), "초기 투자금은 숫자로 입력하세요.");
     }
 
     public int showMenuAndGetSelection() {
@@ -32,9 +30,7 @@ public class StockView {
         System.out.println("  0. 프로그램 종료");
         System.out.println("=============================");
         System.out.print("선택: ");
-        int selection = scanner.nextInt();
-        scanner.nextLine();
-        return selection;
+        return parseIntInput(scanner.nextLine(), "메뉴 번호는 숫자로 입력하세요.");
     }
 
     public void displayPlayerInfo(Player player) {
@@ -65,16 +61,12 @@ public class StockView {
 
     public int getStockIndexFromUser() {
         System.out.print("주식 번호를 선택하세요: ");
-        int index = scanner.nextInt() - 1;
-        scanner.nextLine();
-        return index;
+        return parseIntInput(scanner.nextLine(), "주식 번호는 숫자로 입력하세요.") - 1;
     }
 
     public int getQuantityFromUser() {
         System.out.print("수량을 입력하세요: ");
-        int quantity = scanner.nextInt();
-        scanner.nextLine();
-        return quantity;
+        return parseIntInput(scanner.nextLine(), "수량은 숫자로 입력하세요.");
     }
 
     public void showMessage(String message) {
@@ -83,5 +75,13 @@ public class StockView {
 
     public void close() {
         scanner.close();
+    }
+
+    private static int parseIntInput(String raw, String errorMessage) {
+        try {
+            return Integer.parseInt(raw.trim());
+        } catch (NumberFormatException e) {
+            throw new IllegalArgumentException(errorMessage);
+        }
     }
 }
