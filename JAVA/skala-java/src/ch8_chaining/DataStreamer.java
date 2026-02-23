@@ -8,7 +8,7 @@ public class DataStreamer {
 
     public static void main(String[] args) {
         try {
-            Files.lines(Paths.get("src/chaining/data.txt"))
+            Files.lines(Paths.get("JAVA/skala-java/src/ch8_chaining/data.txt"))
                     .filter(line -> line.contains("SKALA"))
                     .forEach(System.out::println);
         } catch (IOException ex) {
