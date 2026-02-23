@@ -1,1 +1,3 @@
-ȫ�浿,9500,TechCorp:100:5
+sangmin,9500,TechCorp:100:5
+ahyeon,200,TechCorp:100:50|HealthPlus:120:40
+lsmin,5720,HealthPlus:120:20|TechCorp:100:10|GreenEnergy:80:11
