@@ -1,5 +1,13 @@
 package com.skala.basic.data;
 
 public class HelloRequest {
-    // name, email, age 필드
+    private String hello;
+
+    public String getHello() {
+        return hello;
+    }
+
+    public void setHello(String hello) {
+        this.hello = hello;
+    }
 }
