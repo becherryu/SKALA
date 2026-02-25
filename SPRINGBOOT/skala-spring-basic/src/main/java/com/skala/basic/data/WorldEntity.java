@@ -11,6 +11,7 @@ public class WorldEntity {
     private String name;
     private String description;
     private String type;
+    private Integer age;
     private Date createdAt;
     private Date updatedAt;
 

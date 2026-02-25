@@ -14,6 +14,7 @@ import com.skala.basic.data.WorldRequest;
 import com.skala.basic.data.WorldResponse;
 import com.skala.basic.service.WorldService;
 
+import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 
 @RestController
@@ -27,7 +28,7 @@ public class WorldController {
     // "/world" 엔드포인트에 대한 HTTP 메서드 구현: postWorld(), putWorld(), deleteWorld(),
 
     @PostMapping("/world")
-    public WorldResponse postWorld(@RequestBody WorldRequest request) {
+    public WorldResponse postWorld(@Valid @RequestBody WorldRequest request) {
         log.info("post /world {}");
         log.debug("request: {}", request.toString());
         return worldService.createWorld(request);
@@ -41,7 +42,7 @@ public class WorldController {
     }
 
     @PutMapping("/world/{id}")
-    public WorldResponse putWorld(@PathVariable Long id, @RequestBody WorldRequest request) {
+    public WorldResponse putWorld(@PathVariable Long id, @Valid @RequestBody WorldRequest request) {
         log.info("put /world id: {}", id);
         log.debug("request: {}", request.toString());
 

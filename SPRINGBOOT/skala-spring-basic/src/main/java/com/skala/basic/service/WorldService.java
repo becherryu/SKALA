@@ -22,6 +22,7 @@ public class WorldService {
         entity.setName(request.getName());
         entity.setDescription(request.getDescription());
         entity.setType(request.getType());
+        entity.setAge(request.getAge());
         entity.setCreatedAt(new Date());
 
         if (worldList.isEmpty()) {
