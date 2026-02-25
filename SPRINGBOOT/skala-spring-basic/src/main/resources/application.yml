@@ -1,5 +1,5 @@
 server:
-  port: 8080
+    port: 8080
 
 # management:
 #   endpoint:
@@ -7,14 +7,19 @@ server:
 #       show-details: always
 
 spring:
-  datasource:
-    url: jdbc:h2:mem:skala-stock
-    driver-class-name: org.h2.Driver
-    username: sa
-    password:
-  jpa:
-    hibernate:
-      ddl-auto: update
-  h2:
-    console:
-      enabled: true
+    datasource:
+        url: jdbc:h2:mem:skala-stock
+        driver-class-name: org.h2.Driver
+        username: sa
+        password:
+    jpa:
+        hibernate:
+            ddl-auto: update
+    h2:
+        console:
+            enabled: true
+
+logging:
+    level:
+        root: INFO # 전체 로그 레벨 설정
+        '[com.skala.basic]': DEBUG # com.skala.basic의 로그 레벨을 DEBUG로 설정
