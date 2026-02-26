@@ -15,11 +15,13 @@ import com.skala.basic.data.WorldRequest;
 import com.skala.basic.data.WorldResponse;
 import com.skala.basic.service.WorldService;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 
 @RestController
 @RequestMapping("/api")
+@Tag(name = "World API", description = "세계관 관련 API")
 @Slf4j
 public class WorldController {
     // @Autowired를 통해 WorldService 주입
@@ -27,7 +29,7 @@ public class WorldController {
     private WorldService worldService;
 
     // "/world" 엔드포인트에 대한 HTTP 메서드 구현: postWorld(), putWorld(), deleteWorld(),
-
+    // getWorld()
     @PostMapping("/world")
     public WorldResponse postWorld(@Valid @RequestBody WorldRequest request) {
         log.info("post /world");
