@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.skala.basic.data.WorldRequest;
@@ -29,16 +30,16 @@ public class WorldController {
 
     @PostMapping("/world")
     public WorldResponse postWorld(@Valid @RequestBody WorldRequest request) {
-        log.info("post /world {}");
+        log.info("post /world");
         log.debug("request: {}", request.toString());
         return worldService.createWorld(request);
     }
 
     @GetMapping("/world")
-    public WorldResponse getWorld() {
-        log.info("get /world {}");
+    public WorldResponse getWorld(@RequestParam(required = false) Integer year) {
+        log.info("get /world year: {}", year);
 
-        return worldService.getWorlds();
+        return worldService.getWorlds(year);
     }
 
     @PutMapping("/world/{id}")

@@ -18,5 +18,5 @@ public class WorldRequest {
     private String type;
 
     @Positive // 양수
-    private int age;
+    private int since;
 }
