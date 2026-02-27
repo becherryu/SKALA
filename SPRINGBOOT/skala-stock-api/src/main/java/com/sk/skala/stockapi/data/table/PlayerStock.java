@@ -8,11 +8,15 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
+import lombok.AccessLevel;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "player_stock")
 @Data
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
+
 public class PlayerStock {
 
 	@Id
@@ -27,9 +31,6 @@ public class PlayerStock {
 	@JoinColumn(name = "stock_id")
 	private Stock stock;
 	private Integer quantity;
-
-	protected PlayerStock() {
-	}
 
 	public PlayerStock(Player player, Stock stock, Integer quantity) {
 		this.player = player;
