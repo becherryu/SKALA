@@ -69,11 +69,11 @@ public class StockController {
     }
 
 	// 주식 삭제 API
-	@DeleteMapping
+	@DeleteMapping("/{id}")
 	@Operation(summary = "주식 삭제", description = "주식 정보를 삭제합니다.")
-	public Response deleteStock(@RequestBody @Valid Stock stock) {
-        // 서비스로 삭제할 주식 정보 전달(일반적으로 id만 필요)
-        return stockService.deleteStock(stock);
-    }
+	public Response deleteStock(@PathVariable @Positive(message = "id는 0보다 커야 합니다") Long id) {
+		// 서비스로 삭제할 주식 id 전달
+		return stockService.deleteStock(id);
+	}
 
 }

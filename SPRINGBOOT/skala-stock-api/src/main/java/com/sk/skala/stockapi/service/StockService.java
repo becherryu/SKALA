@@ -103,14 +103,16 @@ public class StockService {
         return success(updatedStock);
     }
 
-    // 주식 삭제
-    public Response deleteStock(Stock stock) {
-        validateStockId(stock);
+	// 주식 삭제
+	public Response deleteStock(Long id) {
+		if (id == null || id <= 0) {
+			throw new ParameterException("id");
+		}
 
-        // ID로 조회해서 존재하면 삭제, 없으면 예외 처리 : ResponseException(Error.DATA_NOT_FOUND)
-        Stock targetStock = stockRepository.findById(stock.getId())
-                .orElseThrow(() -> new ResponseException(Error.DATA_NOT_FOUND));
-        stockRepository.delete(targetStock);
+		// ID로 조회해서 존재하면 삭제, 없으면 예외 처리 : ResponseException(Error.DATA_NOT_FOUND)
+		Stock targetStock = stockRepository.findById(id)
+				.orElseThrow(() -> new ResponseException(Error.DATA_NOT_FOUND));
+		stockRepository.delete(targetStock);
 
         // 삭제 후 Response 반환
         return success(targetStock);

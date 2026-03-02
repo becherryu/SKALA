@@ -152,12 +152,12 @@ public class PlayerService {
 
 	// 플레이어 삭제
 	@Transactional
-	public Response deletePlayer(Player player) {
+	public Response deletePlayer(String playerId) {
 		// playerId로 존재 확인 후 삭제 : 오류시 ResponseException(Error.DATA_NOT_FOUND)
-		if (player == null || StringTool.isEmpty(player.getPlayerId())) {
+		if (StringTool.isEmpty(playerId)) {
 			throw new ResponseException(Error.DATA_NOT_FOUND);
 		}
-		Player targetPlayer = playerRepository.findById(player.getPlayerId())
+		Player targetPlayer = playerRepository.findById(playerId)
 				.orElseThrow(() -> new ResponseException(Error.DATA_NOT_FOUND));
 
 		// FK 제약조건으로 인해 player_stock 자식 레코드를 먼저 삭제

@@ -86,13 +86,13 @@ public class PlayerController {
     }
 
 	// 플레이어 삭제 API
-	@DeleteMapping
+	@DeleteMapping("/{playerId}")
 	@Operation(summary = "플레이어 삭제", description = "플레이어 정보를 삭제합니다.")
-	public Response deletePlayer(@RequestBody @Valid Player player) {
-        // 서비스로 삭제할 Player 정보 전달 (Id 필요)
-        // 해당 플레이어 삭제
-        return playerService.deletePlayer(player);
-    }
+	public Response deletePlayer(@PathVariable @NotBlank(message = "playerId는 필수입니다") String playerId) {
+		// 서비스로 삭제할 playerId 전달
+		// 해당 플레이어 삭제
+		return playerService.deletePlayer(playerId);
+	}
 
 	// 플레이어 주식 매수 API
 	@PostMapping("/buy")
