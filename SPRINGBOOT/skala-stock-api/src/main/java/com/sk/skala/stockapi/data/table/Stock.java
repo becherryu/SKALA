@@ -1,5 +1,6 @@
 package com.sk.skala.stockapi.data.table;
 
+import jakarta.validation.constraints.Positive;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -18,6 +19,7 @@ public class Stock {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Positive(message = "id는 0보다 커야 합니다")
 	private Long id;
 	private String stockName;
 	private Double stockPrice;

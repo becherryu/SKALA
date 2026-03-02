@@ -1,5 +1,6 @@
 package com.sk.skala.stockapi.data.table;
 
+import jakarta.validation.constraints.NotBlank;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
@@ -14,6 +15,7 @@ import lombok.NoArgsConstructor;
 public class Player {
 
 	@Id
+	@NotBlank(message = "playerId는 필수입니다")
 	private String playerId;
 	private String playerPassword;
 	private Double playerMoney;
