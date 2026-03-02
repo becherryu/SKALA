@@ -57,6 +57,7 @@ dist/
 ####################################
 local.properties
 src/main/resources/rebel.xml
+demo-app/*
 
 ####################################
 # Temporary directories
