@@ -12,6 +12,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 public class PlayerStockDto {
+    // Player가 보유하는 주식 정보
     private Long stockId;
     private String stockName;
     private Double stockPrice;
