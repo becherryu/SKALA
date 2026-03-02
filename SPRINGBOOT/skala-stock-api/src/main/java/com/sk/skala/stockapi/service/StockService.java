@@ -68,8 +68,8 @@ public class StockService {
                     throw new ResponseException(Error.DATA_DUPLICATED);
                 });
 
-        // 신규 Stock의 ID는 0L로 세팅(=JPA가 자동 생성)
-        stock.setId(0L);
+        // 신규 Stock의 ID는 null로 세팅(=JPA가 자동 생성)
+        stock.setId(null);
 
         // 저장 후 Response 반환
         Stock createdStock = stockRepository.save(stock);

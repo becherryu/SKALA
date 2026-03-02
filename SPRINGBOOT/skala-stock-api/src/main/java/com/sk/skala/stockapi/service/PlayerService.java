@@ -151,6 +151,7 @@ public class PlayerService {
 	}
 
 	// 플레이어 삭제
+	@Transactional
 	public Response deletePlayer(Player player) {
 		// playerId로 존재 확인 후 삭제 : 오류시 ResponseException(Error.DATA_NOT_FOUND)
 		if (player == null || StringTool.isEmpty(player.getPlayerId())) {
@@ -158,6 +159,12 @@ public class PlayerService {
 		}
 		Player targetPlayer = playerRepository.findById(player.getPlayerId())
 				.orElseThrow(() -> new ResponseException(Error.DATA_NOT_FOUND));
+
+		// FK 제약조건으로 인해 player_stock 자식 레코드를 먼저 삭제
+		List<PlayerStock> playerStocks = playerStockRepository.findStocksByPlayer(targetPlayer);
+		if (!playerStocks.isEmpty()) {
+			playerStockRepository.deleteAll(playerStocks);
+		}
 		playerRepository.delete(targetPlayer);
 
 		// 저장 후 Response 반환
