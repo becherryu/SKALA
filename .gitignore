@@ -76,3 +76,5 @@ SKCT 예제/
 # Private / Local Projects
 ####################################
 my_project/
+__pycache__/
+.dockerignore
