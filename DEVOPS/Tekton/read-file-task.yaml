@@ -1,0 +1,15 @@
+apiVersion: tekton.dev/v1
+kind: Task
+metadata:
+    name: read-file-task
+    namespace: tekton-demo
+spec:
+    workspaces:
+        - name: shared-data
+    steps:
+        - name: read-file
+          image: alpine:3.20
+          script: |
+              #!/bin/sh
+              echo "Reading file..."
+              cat $(workspaces.shared-data.path)/message.txt

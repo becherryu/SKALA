@@ -1,0 +1,21 @@
+apiVersion: tekton.dev/v1
+kind: PipelineRun
+metadata:
+    generateName: ci-run-
+spec:
+    pipelineRef:
+        name: ci-pipeline
+    params:
+        - name: repo-url
+          value: "https://github.com/becherryu/SKALA.git"
+        - name: image-url
+          value: "myregistry.io/myimage:latest"
+    workspaces:
+        - name: shared-data
+          volumeClaimTemplate:
+              spec:
+                  accessModes:
+                      - ReadWriteOnce
+                  resources:
+                      requests:
+                          storage: 1Gi

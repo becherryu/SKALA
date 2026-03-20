@@ -1,0 +1,41 @@
+apiVersion: tekton.dev/v1
+kind: Pipeline
+metadata:
+    name: ci-pipeline
+spec:
+    params:
+        - name: repo-url
+          type: string
+        - name: image-url
+          type: string
+    workspaces:
+        - name: shared-data
+    tasks:
+        - name: clone
+          taskRef:
+              name: git-clone
+          params:
+              - name: url
+                value: $(params.repo-url)
+          workspaces:
+              - name: output
+                workspace: shared-data
+        - name: test
+          runAfter:
+              - clone
+          taskRef:
+              name: run-tests
+          workspaces:
+              - name: source
+                workspace: shared-data
+        - name: build
+          runAfter:
+              - test
+          taskRef:
+              name: kaniko
+          params:
+              - name: IMAGE
+                value: $(params.image-url)
+          workspaces:
+              - name: source
+                workspace: shared-data
