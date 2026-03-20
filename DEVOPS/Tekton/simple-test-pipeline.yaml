@@ -1,0 +1,31 @@
+apiVersion: tekton.dev/v1
+kind: Pipeline
+metadata:
+    name: simple-test-pipeline
+    namespace: tekton-demo
+spec:
+    workspaces:
+        - name: shared-workspace
+
+    tasks:
+        - name: step-hello
+          taskRef:
+              name: hello-task
+
+        - name: step-write-file
+          runAfter:
+              - step-hello
+          taskRef:
+              name: write-file-task
+          workspaces:
+              - name: shared-data
+                workspace: shared-workspace
+
+        - name: step-read-file
+          runAfter:
+              - step-write-file
+          taskRef:
+              name: read-file-task
+          workspaces:
+              - name: shared-data
+                workspace: shared-workspace

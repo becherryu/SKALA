@@ -1,0 +1,16 @@
+apiVersion: tekton.dev/v1
+kind: Task
+metadata:
+    name: write-file-task
+    namespace: tekton-demo
+spec:
+    workspaces:
+        - name: shared-data
+    steps:
+        - name: write-file
+          image: alpine:3.20
+          script: |
+              #!/bin/sh
+              echo "Tekton Pipeline Test Success" > $(workspaces.shared-data.path)/message.txt
+              echo "File created:"
+              cat $(workspaces.shared-data.path)/message.txt

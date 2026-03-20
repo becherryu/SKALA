@@ -1,0 +1,10 @@
+apiVersion: tekton.dev/v1
+kind: PipelineRun
+metadata:
+    name: sample-pipeline-run
+spec:
+    pipelineRef:
+        name: sample-pipeline
+    params:
+        - name: app-name
+          value: my-app
