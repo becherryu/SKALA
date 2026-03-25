@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+    name: sk3024-maintq-fe
+    namespace: skala3-ai1
+spec:
+    selector:
+        app: sk3024-maintq-fe
+    ports:
+        - port: 8001
+          targetPort: 8001
+    type: ClusterIP
