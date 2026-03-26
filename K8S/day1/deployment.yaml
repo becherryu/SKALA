@@ -35,3 +35,10 @@ spec:
                           # 초과 시 OOMKill 또는 스로틀링
                           cpu: '500m'
                           memory: '512Mi'
+                  volumeMounts:
+                      - name: sk3024-storage
+                        mountPath: /data
+            volumes:
+                - name: sk3024-storage
+                  persistentVolumeClaim:
+                      claimName: sk3024-pvc
