@@ -1,0 +1,10 @@
+[project]
+name = "review-ai-embedding"
+version = "0.1.0"
+description = "AI 기반 고객 리뷰 벡터 임베딩 및 유사도 검색 시스템"
+requires-python = ">=3.11"
+dependencies = [
+    "psycopg2-binary>=2.9.11",
+    "python-dotenv>=1.2.2",
+    "sentence-transformers>=5.3.0",
+]

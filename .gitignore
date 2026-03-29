@@ -77,5 +77,6 @@ SKCT 예제/
 ####################################
 my_project/
 __pycache__/
+.venv/
 .dockerignore
 RAG/ai-service
